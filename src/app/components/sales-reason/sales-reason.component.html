@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <tr>
+            <th>SalesReasonId</th>
+            <th>Name</th>
+            <th>ReasonType</th>
+            <th>ModifiedDate</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let saleReason of SalesReason | async">
+            <td>{{saleReason.salesReasonId}}</td>
+            <td>{{saleReason.name}}</td>
+            <td>{{saleReason.reasonType}}</td>
+            <td>{{saleReason.modifiedDate}}</td>
+        </tr>
+    </tbody>
+</table>
